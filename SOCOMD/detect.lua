@@ -1,4 +1,6 @@
- env.info("Do Script detect  - 2 ", true)
+ env.info("Do Script detect  - 3 ", true)
+
+ -- test Comment
 
 local con = Unit.getController(Unit.getByName('SA-10RDR'))
   local target = Unit.getByName('TestFlight-1')
@@ -16,6 +18,7 @@ function CheckRadar(isDetected, time)
     for det, enum in pairs(Controller.Detection) do
         lastValue = con:isTargetDetected(target, enum) -- Update lastValue with the result of isTargetDetected
     end
+
     isDetected = lastValue
      -- Do things to check, use isDetected (which is the scheduleFunction's second argument)
     if isDetected == false or nil then
