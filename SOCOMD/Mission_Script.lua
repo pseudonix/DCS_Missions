@@ -1,6 +1,5 @@
 do
-
- 	 env.info("Dofile Tanker Script - ", true)
+--  env.info("Dofile Mission Script - 1 ", true)
 
 
     local tankerShell = GROUP:FindByName( "Shell" )
