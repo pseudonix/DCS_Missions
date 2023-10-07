@@ -44,9 +44,9 @@ for det, enum in pairs(Controller.Detection) do
 end 
 
         -- set the bool 'isDetected' flase if no detection, true otherwise
-    if (tgt1Detected or tgt2Detected or testTgtDetected == false or nil ) then
+    if ((tgt1Detected == false or nil) or (tgt2Detected == false or nil) or (testTgtDetected == false or nil)) then
         isDetected = false
-    else
+    elseif (tgt1Detected == true or tgt2Detected == true or testTgtDetected == true ) then
         isDetected = true
     end
 
