@@ -38,13 +38,13 @@ function CheckRadar(isDetected, time)
     -- if 'isDetected' is false script keeps running, if true trigger events
     if isDetected == false or nil then
         -- Keep going
---        trigger.action.outText("Not Detected", 1, true)
+       -- trigger.action.outText("Not Detected", 1, true)
         return time + 1
  --       trigger.action.outText("Time: " .. time.tostring , 1, true)
     else
         -- set flag.a
         trigger.action.setUserFlag( 21, 1 )
---        trigger.action.outText("Detected", 10, true)
+       -- trigger.action.outText("Detected", 10, true)
         return nil
     end
 end
