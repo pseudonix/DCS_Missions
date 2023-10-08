@@ -1,6 +1,6 @@
 --env.info("Dofile Detect Script  - 3 ", true)
 --trigger.action.outText("Detect Script Ver 3 Loaded", 5, true)
-
+--Mal edit
 -- dofile("C:/Users/saint/Saved Games/DCS.openbeta/Missions/git/DCS_Missions/SOCOMD/detect.lua")
 local rdr1 = Unit.getController(Unit.getByName('SA-10-1'))
 local rdr2 = Unit.getController(Unit.getByName('SA-10-2')) 
